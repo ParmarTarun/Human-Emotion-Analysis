@@ -49,5 +49,5 @@ This makes the classification harder because the model have to generalize well a
 - Move the csv file in root folder of your project.
 - Run command <code>pip install -r requirements.txt</code> 
     <b>Note:</b> Requirements contain requirements for whole project.
-- Run <code>python convert_fer2013_to_images_and_landmarks.py</code> 
+- Run <code>python convert_fer2013_to_images_and_landmarks.py</code> <br/>
 <i>Recommended: create a virtual environment with python3.6</i>
