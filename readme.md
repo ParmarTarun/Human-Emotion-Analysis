@@ -6,7 +6,7 @@ Using a Convolutional Neural Network (CNN) to recognize facial expressions from 
 ## Steps Involved In the Project:
 
 - Pre-Processing :heavy_check_mark:
-- Training :heavy_check_mark:
+- Training & Evaluation :heavy_check_mark:
 - Optimizing :heavy_check_mark:
 - Predicting
 
