@@ -1,6 +1,9 @@
-venv
-.vscode
-VSCode.bat
-fer2013.csv
-fer2013_features
 shape_predictor_68_face_landmarks.dat
+venv
+Dataset
+fer2013_features
+temp.jpg
+best_model
+checkpoints
+__pycache__
+logs
