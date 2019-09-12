@@ -50,5 +50,5 @@ Fer2013 is a challenging dataset. The images are not aligned and some of them ar
 - Run <code>python convert.py</code> <br/>
 - Run <code>python train.py --train=yes</code><br/>
     <b>Note:</b> You can also provide argument like --evaluate=yes to just evaluate.
-- Run <code>python optimize_hyperparameters.py <code/><br/>This file takes argument -m for total number of evaluations.
+- Run <code>python optimize_hyperparameters.py </code><br/>This file takes argument -m for total number of evaluations.<br/>
 <i>Recommended: create a virtual environment with python3.6</i>
