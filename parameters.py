@@ -43,6 +43,12 @@ class Training:
     save_model = True
     save_model_path = "best_model/saved_model.bin"
 
+class OptimizerSearchSpace:
+    learning_rate = {'min': 0.00001, 'max': 0.1}
+    learning_rate_decay = {'min': 0.5, 'max': 0.99}
+    optimizer = ['momentum']   # ['momentum', 'adam', 'rmsprop', 'adagrad', 'adadelta']
+    optimizer_param = {'min': 0.5, 'max': 0.99}
+    keep_prob = {'min': 0.7, 'max': 0.99}
 
 def make_dir(folder):
     if not os.path.exists(folder):
@@ -52,6 +58,7 @@ DATASET = Dataset()
 NETWORK = Network()
 TRAINING = Training()
 HYPERPARAMS = Hyperparams()
+OPTIMIZER = OptimizerSearchSpace()
 
 make_dir(TRAINING.logs_dir)
 make_dir(TRAINING.checkpoint_dir)

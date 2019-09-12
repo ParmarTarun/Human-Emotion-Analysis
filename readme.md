@@ -7,7 +7,7 @@ Using a Convolutional Neural Network (CNN) to recognize facial expressions from 
 
 - Pre-Processing :heavy_check_mark:
 - Training :heavy_check_mark:
-- Optimizing
+- Optimizing :heavy_check_mark:
 - Predicting
 
 ## <a>1. Installed dependencies</a>
@@ -19,6 +19,7 @@ Using a Convolutional Neural Network (CNN) to recognize facial expressions from 
 - Dlib
 - cv2
 - skimage
+- hyperopt
 
 ## <a>2. Dataset Used</a>
 - [ferc2013.csv](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)
@@ -36,6 +37,8 @@ Fer2013 is a challenging dataset. The images are not aligned and some of them ar
 - The above file extracts data from the dataset fer2013 and stores the image file (.jpg) and numpy array files (.npy) for images, labels, landmarks and hog features to a folder named "fer2013_features" into different subfolders as TestData, TrainingData and PrivateData.
 - [Train the model](train.py)
 - The above file imports the [model.py](model.py) using [data_loader.py](data_loader.py) and train the model using Tensorflow. You can also adjust the parameters according to your interest in [parameters.py](paramters.py)
+- [Optimize with hyperopt](optimize_hyperparameters.py)
+- The above file uses hyperopt to provide us with best hyper parameters.
 
 # How To Run:
 - Clone the project into a folder
@@ -47,5 +50,5 @@ Fer2013 is a challenging dataset. The images are not aligned and some of them ar
 - Run <code>python convert.py</code> <br/>
 - Run <code>python train.py --train=yes</code><br/>
     <b>Note:</b> You can also provide argument like --evaluate=yes to just evaluate.
-
+- Run <code>python optimize_hyperparameters.py <code/><br/>This file takes argument -m for total number of evaluations.
 <i>Recommended: create a virtual environment with python3.6</i>
