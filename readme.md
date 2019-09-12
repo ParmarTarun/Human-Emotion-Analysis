@@ -7,7 +7,7 @@ Using a Convolutional Neural Network (CNN) to recognize facial expressions from 
 
 - Pre-Processing :heavy_check_mark:
 - Training :heavy_check_mark:
-- Otimizing
+- Optimizing
 - Predicting
 
 ## <a>1. Installed dependencies</a>
@@ -23,7 +23,7 @@ Using a Convolutional Neural Network (CNN) to recognize facial expressions from 
 ## <a>2. Dataset Used</a>
 - [ferc2013.csv](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)
 
-Fer2013 is a challenging dataset. The images are not aligned and some of them are uncorrectly labeled as we can see from the following images. Moreover, some samples do not contain faces. 
+Fer2013 is a challenging dataset. The images are not aligned and some of them are uncorrectly labeled. Moreover, some samples do not contain faces.
 
 
 ### <a>Dataset includes:</a>
@@ -32,8 +32,10 @@ Fer2013 is a challenging dataset. The images are not aligned and some of them ar
 - Usage column with label as Training, PublicTest or PrivateTest.
 
 ## <a>3. Tasks Performed</a>
-- [Convert From fer2013 to Images](convert.py)
+- [Convert From fer2013 to Images and numpy arrays](convert.py)
 - The above file extracts data from the dataset fer2013 and stores the image file (.jpg) and numpy array files (.npy) for images, labels, landmarks and hog features to a folder named "fer2013_features" into different subfolders as TestData, TrainingData and PrivateData.
+- [Train the model](train.py)
+- The above file imports the [model.py](model.py) using [data_loader.py](data_loader.py) and train the model using Tensorflow. You can also adjust the parameters according to your interest in [parameters.py](paramters.py)
 
 # How To Run:
 - Clone the project into a folder
