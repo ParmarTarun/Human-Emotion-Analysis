@@ -67,6 +67,7 @@ NETWORK = Network()
 TRAINING = Training()
 HYPERPARAMS = Hyperparams()
 OPTIMIZER = OptimizerSearchSpace()
+VIDEO_PREDICTOR = VideoPredictor()
 
 make_dir(TRAINING.logs_dir)
 make_dir(TRAINING.checkpoint_dir)
