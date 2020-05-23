@@ -50,6 +50,14 @@ class OptimizerSearchSpace:
     optimizer_param = {'min': 0.5, 'max': 0.99}
     keep_prob = {'min': 0.7, 'max': 0.99}
 
+class VideoPredictor:
+    emotions = ["Angry", "Disgust", "Fear", "Happy", "Sad", "Surprise", "Neutral"]
+    print_emotions = False
+    camera_source = 0
+    face_detection_classifier = "lbpcascade_frontalface.xml"
+    show_confidence = False
+    time_to_wait_between_predictions = 0.5
+
 def make_dir(folder):
     if not os.path.exists(folder):
         os.makedirs(folder)
