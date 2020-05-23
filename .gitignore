@@ -7,3 +7,4 @@ best_model
 checkpoints
 __pycache__
 logs
+.vscode
